@@ -5,25 +5,35 @@ h1 {
 
 h2 {
     text-align: center;
+<<<<<<< HEAD
     margin-right: 30PX;
+=======
+>>>>>>> c3d7ded3bd564c6e70253952945342e092530b15
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .btnn {
+<<<<<<< HEAD
     width: 110%;
 }
 
 input:hover {
     border-radius: 20px;
+=======
+    width: 120%;
+>>>>>>> c3d7ded3bd564c6e70253952945342e092530b15
 }
 
 .btn {
     width: 100%;
+<<<<<<< HEAD
     margin-right: 70px;
 }
 
 a:hover {
     color: blue;
+=======
+>>>>>>> c3d7ded3bd564c6e70253952945342e092530b15
 }
 
 .singform {
@@ -43,7 +53,11 @@ span {
 }
 
 a {
+<<<<<<< HEAD
     color: rgb(155, 150, 150);
+=======
+    color: silver;
+>>>>>>> c3d7ded3bd564c6e70253952945342e092530b15
     font-size: 14px;
     text-decoration: none;
     margin: 15px 0;
@@ -54,6 +68,7 @@ button {
     border: 1px solid #ccb6b3;
     background-color: #3498DB;
     color: #FFFFFF;
+<<<<<<< HEAD
     font-size: 14px;
     font-weight: bold;
     padding: 12px 45px;
@@ -63,11 +78,33 @@ button {
 .imagemerg {
     margin-top: -0px;
     margin-right: 18px;
+=======
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
+}
+
+.imagemerg {
+    margin-top: -10px;
+    margin-right: 20px;
+>>>>>>> c3d7ded3bd564c6e70253952945342e092530b15
     margin-left: 70px;
 }
 
 .user {
     position: fixed;
+<<<<<<< HEAD
     margin-left: 13px;
     margin-top: 25px;
 }
@@ -80,6 +117,15 @@ input[type=password] {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+=======
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+button.ghost {
+    background-color: transparent;
+    border-color: #FFFFFF;
+>>>>>>> c3d7ded3bd564c6e70253952945342e092530b15
 }
 
 form {
@@ -132,7 +178,10 @@ input {
 
 .overlay-container {
     position: absolute;
+<<<<<<< HEAD
     color: none;
+=======
+>>>>>>> c3d7ded3bd564c6e70253952945342e092530b15
     top: 0;
     left: 50%;
     width: 50%;

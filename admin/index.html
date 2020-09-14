@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Dashboard</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome JS -->
+    <link rel="stylesheet" href="path/to/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <div id="sidebar">
+            <div class="sidebar-header">
+                
+                <strong>IMG</strong>        <!--Strong tag is visible for the partially sidebar-->
+            </div>
+    
+            <ul class="list-unstyled components" id="ulCollapse">
+                <li>
+                    <a href="#setting" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        
+                        <p><i class="fa fa-cogs"></i>Settings</p>
+                        <strong><i class="fa fa-cogs"></i></strong>
+                    </a>
+                    <ul class="collapse list-unstyled" id="setting">
+                        <li>
+                            <a href="#">Institution Details</a>
+                        </li>
+                        <li>
+                            <a href="#">Academic Details</a>
+                        </li>
+                        <li>
+                            <a href="#">Student Import</a>
+                        </li>
+                        <li>
+                            <a href="#">Employee Import</a>    
+                        </li>
+                        <li>
+                            <a href="#">Applicant List</a> 
+                        </li>
+                        <li>
+                            <a href="#">Employee Application</a>
+                        </li>
+                        <li>
+                            <a href="#">Caste and Religion</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!--Academic-->
+                <li>
+                    <a href="#academic" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <p><i class="fas fa-users"></i>Academic</p>
+                        <strong><i class="fas fa-users"></i></strong>
+                    </a>
+                    <ul class="collapse list-unstyled" id="academic">
+                        <li>
+                            <a href="#">Course and Batch</a>
+                        </li>
+                        <li>
+                            <a href="#">Subjects</a>
+                        </li>
+                        <li>
+                            <a href="#">Lesson Planning</a>
+                        </li>
+                        <li>
+                            <a href="#">Time Table</a>    
+                        </li>
+                        <li>
+                            <a href="#">Exams</a> 
+                        </li>
+                        <li>
+                            <a href="#">Assignments & Notes</a>
+                        </li>
+                        <li>
+                            <a href="#">Certifications</a>
+                        </li>
+                        <li>
+                            <a href="#">Placements</a>
+                        </li>
+                        <li>
+                            <a href="#">Occurrence</a>
+                        </li>
+                        <li>
+                            <a href="#">Circular</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!--HR Payroll-->
+                <li>
+                    <a href="#hrpayroll" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <p><i class="fa fa-eye-slash"></i>HR Payroll</p>
+                        <strong><i class="fa fa-eye-slash"></i></strong>
+                    </a>
+                    <ul class="collapse list-unstyled" id="hrpayroll">
+                        <li>
+                            <a href="#">Employee Management</a>
+                        </li>
+                        <li>
+                            <a href="#">Payroll</a>
+                        </li>
+                        <li>
+                            <a href="#">Leave Management</a>
+                        </li>
+                        <li>
+                            <a href="#">Attendence</a>    
+                        </li>
+                    </ul>
+                </li>
+
+                <!--Student-->
+                <li>
+                    <a href="#student" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <p><i class="fas fa-user-edit"></i>Student</p>
+                        <strong><i class="fas fa-user-edit"></i></strong>
+                    </a>
+                    <ul class="collapse list-unstyled" id="student">
+                        <li>
+                            <a href="#">Student Category</a>
+                        </li>
+                        <li>
+                            <a href="#">Academic Details</a>
+                        </li>
+                        <li>
+                            <a href="#">Student Import</a>
+                        </li>
+                        <li>
+                            <a href="#">Employee Import</a>    
+                        </li>
+                        <li>
+                            <a href="#">Applicant List</a> 
+                        </li>
+                        <li>
+                            <a href="#">Employee Application</a>
+                        </li>
+                        <li>
+                            <a href="#">Caste and Religion</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!--Finance-->
+                <li>
+                    <a href="#Finance" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <p><i class="fas fa-chart-line"></i>Finance</p>
+                        <strong><i class="fas fa-chart-line"></i></strong>
+                    </a>
+                    <ul class="collapse list-unstyled" id="Finance">
+                        <li>
+                            <a href="#">Fees</a>
+                        </li>
+                        <li>
+                            <a href="#">Accounting</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!--Library-->
+                <li>
+                    <a href="#Library" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <p><i class="fas fa-book"></i>Library</p>
+                        <strong><i class="fas fa-book"></i></strong>
+                    </a>
+                    <ul class="collapse list-unstyled" id="Library">
+                        <li>
+                            <a href="#">Add Category</a>
+                        </li>
+                        <li>
+                            <a href="#">Add Books</a>
+                        </li>
+                        <li>
+                            <a href="#">Issue Book</a>
+                        </li>
+                        <li>
+                            <a href="#">Request Details</a>    
+                        </li>
+                        <li>
+                            <a href="#">Book Return</a> 
+                        </li>
+                        <li>
+                            <a href="#">Reports</a>
+                        </li>
+                        <li>
+                            <a href="#">Import</a>
+                        </li>
+                        <li>
+                            <a href="#">Export</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!--Transport-->
+                <li>
+                    <a href="#Transport" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <p><i class="fas fa-bus"></i>Transport</p>
+                        <strong><i class="fas fa-bus"></i></strong>
+                    </a>
+                    <ul class="collapse list-unstyled" id="Transport">
+                        <li>
+                            <a href="#">Add Vehicles</a>
+                        </li>
+                        <li>
+                            <a href="#">Add Driver</a>
+                        </li>
+                        <li>
+                            <a href="#">Add Route</a>
+                        </li>
+                        <li>
+                            <a href="#">Add Destination</a>    
+                        </li>
+                        <li>
+                            <a href="#">Tranport Allocation</a> 
+                        </li>
+                        <li>
+                            <a href="#">Fee Collection</a>
+                        </li>
+                        <li>
+                            <a href="#">Import</a>
+                        </li>
+                        <li>
+                            <a href="#">SMS Alert</a>
+                        </li>
+                        <li>
+                            <a href="#">Report</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!--Hostel-->
+                <li>
+                    <a href="#Hostel" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <p><i class="fas fa-door-open"></i>Hostel</p>
+                        <strong><i class="fas fa-door-open"></i></strong>
+                    </a>
+                    <ul class="collapse list-unstyled" id="Hostel">
+                        <li>
+                            <a href="#">Hostel Details</a>
+                        </li>
+                        <li>
+                            <a href="#">Hostel Room</a>
+                        </li>
+                        <li>
+                            <a href="#">Hostel Allocation</a>
+                        </li>
+                        <li>
+                            <a href="#">Request Details</a>    
+                        </li>
+                        <li> 
+                            <a href="#">Hostel Transfer/Vacate</a> 
+                        </li>
+                        <li>
+                            <a href="#">Hostel Register</a>
+                        </li>
+                        <li>
+                            <a href="#">Hostel Visitors</a>
+                        </li>
+                        <li>
+                            <a href="#">Hostel Fee Collection</a>
+                        </li>
+                        <li>
+                            <a href="#">Reports</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!--Message/SMS-->
+                <li>
+                    <a href="#sms" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <p><i class="fa fa-tags"></i>Message/SMS</p>
+                        <strong><i class="fa fa-tags"></i></strong>
+                    </a>
+                    <ul class="collapse list-unstyled" id="sms">
+                        <li>
+                            <a href="#">Mailbox</a>
+                        </li>
+                        <li>
+                            <a href="#">SMS Settings</a>
+                        </li>
+                        <li>
+                            <a href="#">Visitor SMS Settings</a>
+                        </li>
+                        <li>
+                            <a href="#">Bulk SMS</a>    
+                        </li>
+                        <li>
+                            <a href="#">Email</a> 
+                        </li>
+                    </ul>
+                </li>
+
+                <!--Store Management-->
+                <li>
+                    <a href="#store" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <p><i class="fa fa-suitcase"></i>Store Management</p>
+                        <strong><i class="fa fa-suitcase"></i></strong>
+                    </a>
+                    <ul class="collapse list-unstyled" id="store">
+                        <li>
+                            <a href="#">Vendors</a>
+                        </li>
+                        <li>
+                            <a href="#">Inventory Category</a>
+                        </li>
+                        <li>
+                            <a href="#">Inventory Item</a>
+                        </li>
+                        <li>
+                            <a href="#">Purchase Receipts</a>    
+                        </li>
+                        <li>
+                            <a href="#">Inventory Issues</a> 
+                        </li>
+                        <li>
+                            <a href="#">Stock Register</a>
+                        </li>
+                        <li>
+                            <a href="#">Reports</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!--Performance-->
+                <li>
+                    <a href="#Performance" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <p><i class="fas fa-graduation-cap"></i>Performance</p>
+                        <strong><i class="fas fa-graduation-cap"></i></strong>
+                    </a>
+                    <ul class="collapse list-unstyled" id="Performance">
+                        <li>
+                            <a href="#">GPA</a>
+                        </li>
+                        <li>
+                            <a href="#">CCE</a>
+                        </li>
+                        <li>
+                            <a href="#">Teacher Comments</a>
+                    </ul>
+                </li>
+
+                <!--Events-->
+                <li>
+                    <a href="#Events" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <p><i class="fa fa-trophy"></i>Events</p>
+                        <strong><i class="fa fa-trophy"></i></strong>
+                    </a>
+                    <ul class="collapse list-unstyled" id="Events">
+                        <li>
+                            <a href="#">Event Types</a>
+                        </li>
+                        <li>
+                            <a href="#">Add Events</a>
+                        </li>
+                        <li>
+                            <a href="#">Event Reports</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!--Integration-->
+                <li>
+                    <a href="#Integration" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <p><i class="fa fa-asterisk"></i>Integration</p>
+                        <strong><i class="fa fa-asterisk"></i></strong>
+                    </a>
+                    <ul class="collapse list-unstyled" id="Integration">
+                        <li>
+                            <a href="#">Vehicles tracking</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!--Task Manager-->
+                <li>
+                    <a href="#task" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <p><i class="far fa-file"></i>Task Manager</p>
+                        <strong><i class="far fa-file"></i></strong>
+                    </a>
+                    <ul class="collapse list-unstyled" id="task">
+                        <li>
+                            <a href="#">Assign Task</a>
+                        </li>
+                        <li>
+                            <a href="#">Task Details</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!--Reports-->
+                <li>
+                    <a href="#reports" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <p><i class="far fa-file-alt"></i>Reports</p>
+                        <strong><i class="far fa-file-alt"></i></strong>
+                    </a>
+                    <ul class="collapse list-unstyled" id="reports">
+                        <li>
+                            <a href="#">Student Reports</a>
+                        </li>
+                        <li>
+                            <a href="#">Student Details</a>
+                        </li>
+                        <li>
+                            <a href="#">Elective Reports</a>
+                        </li>
+                        <li>
+                            <a href="#">Fee Due Reports</a>    
+                        </li>
+                        <li>
+                            <a href="#">Fee Paid Reports</a> 
+                        </li>
+                        <li>
+                            <a href="#">Absentees Reports</a>
+                        </li>
+                        <li>
+                            <a href="#">Class Summary Reports</a>
+                        </li>
+                        <li>
+                            <a href="#">Admission Reports</a>
+                        </li>
+                        <li>
+                            <a href="#">Leave Reports</a>
+                        </li>
+                        <li>
+                            <a href="#">Visitors List</a>
+                        </li>
+                        <li>
+                            <a href="#">Follow Up Reports</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!--Data Export-->
+                <li>
+                    <a href="#dataexports" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <p><i class="fas fa-print"></i>Data Exports</p>
+                        <strong><i class="fas fa-print"></i></strong>
+                    </a>
+                    <ul class="collapse list-unstyled" id="dataexports">
+                        <li>
+                            <a href="#">Export</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+            </ul>
+            
+            
+            
+            
+        </div>
+    
+        <!-- Page Content  -->
+        <nav id="topnav">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    
+                    <!-- Toggle Button On TopNav-->
+                    <button type="button" id="sidebarCollapse" class="btn btn-default">
+                        <i class="fas fa-bars"></i>                        
+                    </button>
+                
+            
+                    <!-- Image Profile on TopNav-->
+            
+                    <div class="dropdown">
+                    <button class="btn btn-user" type="button" data-toggle="dropdown" >
+                        <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+                    </button>
+                    <ul class="dropdown-menu">
+                    <li><a href="#"><i class="fas fa-user-alt" ></i>Profile</a></li>
+                    
+                    <li><a href="#"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
+                    </ul>
+                
+                    </div>
+                </div>
+            </nav>
+    </div>
+
+
+<script>
+
+    /* Jquery for Partially Toggling */
+    $(document).ready(function () {
+
+$('#sidebarCollapse').on('click', function () {
+    $('#sidebar').toggleClass('active');
+});
+
+        /* Jquery for Responsiveness */
+ $('#sidebarCollapse').on('click', function () {
+     $('.collapse').removeClass('show');
+});
+ $('#sidebar').on('click',function () {
+     if ($('.active')) {
+        $('#sidebar').removeClass('active');
+     }
+ })
+
+});
+</script>
+</body>
+
+</html>

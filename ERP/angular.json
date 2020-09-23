@@ -28,7 +28,8 @@
                         ],
                         "scripts": [
                             "src/assets/script.js",
-                            "src/assets/link/jquery/jquery.min.js"
+                            "src/assets/link/jquery/jquery.min.js",
+                            "src/assets/form.js"
 
 
                         ]

@@ -1,0 +1,641 @@
+<!-- <script>
+    function addressFunction() {
+        if (document.getElementById('same').checked) {
+            document.getElementById('l_house_number').value = document.
+            getElementById('p_house_number').value;
+            document.getElementById('l_colony_name').value = document.
+            getElementById('p_colony_name').value;
+
+
+            document.getElementById('l_city').value = document.
+            getElementById('p_city').value;
+            document.getElementById('l_country').value = document.
+            getElementById('p_country').value;
+
+            document.getElementById('l_pincode').value = document.
+            getElementById('p_pincode').value;
+            //document.getElementById('l_landmark').value=document. 
+            //  getElementById('p_landmark').value; 
+
+            document.getElementById('l_state').value = document.
+            getElementById('p_state').value;
+
+
+        } else {
+            document.getElementById('l_house_number').value = "";
+            document.getElementById('l_colony_name').value = "";
+
+            document.getElementById('l_pincode').value = "";
+            document.getElementById('l_city').value = "";
+
+            document.getElementById('l_country').value = "";
+            document.getElementById('l_state').value = "";
+            //document.getElementById('l_landmark').value = "";
+            console.log(pstate);
+        }
+    }
+</script> -->
+<div class="container">
+    <div class="studentform">
+        <div class="container">
+            <br>
+            <div class="row">
+                <h2>Student Admission</h2>
+            </div>
+        </div>
+        <hr class="divider">
+        <form>
+            <!-- ALL GOES FROM HERE -->
+
+            <div class="container">
+                <div class="row">
+                    <h5>Official Details:</h5>
+                    <hr class="divider">
+
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="firstname">First Name</label>
+                            <input type="text" class="form-control" id="first_name" placeholder="Enter First Name" required>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="middlename">Middle Name</label>
+                            <input type="text" class="form-control" id="middle_name" placeholder="Enter Middle Name">
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" class="form-control" id="last_name" placeholder="Enter Last Name" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="dateofbirth">Date of Birth  <i class="fa fa-calendar"></i></label>
+
+                            <input type="date" class="form-control" value="2020-09-22" id="date_of_birth" placeholder="MM/DD/YY" required>
+
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select class="form-control" id="gender" required>
+                                <option>Select </option>
+                                <option>Female</option>
+                                <option>Male</option>
+  
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="bloodgroup">Blood Group</label>
+                            <select class="form-control" id="blood_group">
+                                <option>Select </option>
+                                <option>A+</option>
+                                <option>A-</option>
+                                <option>B+</option>
+                                <option>B-</option>
+                                <option>O+</option>
+                                <option>O-</option>
+                                <option>AB+</option>
+                                <option>AB-</option>
+  
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="enrollment">Enrollment Number</label >
+                            <input type="text" class="form-control" id="enrollment_number" placeholder="Enter Enrollment Number" required>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="nationality">Nationality</label>
+                            <select class="form-control" id="nationality">
+                                <option>Select </option>
+                                <option>Indian</option>
+                                <option>Other</option>
+  
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="category">Category</label>
+                            <select class="form-control" id="category" required>
+                                <option>Select </option>
+                                <option>General</option>
+                                <option>OBC</option>
+                                <option>SC</option>
+                                <option>ST</option>
+  
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+
+                        <div class="form-group">
+                            <label for="aadhaarnumber">Aadhaar Number</label>
+                            <input type="number" class="form-control" id="aadhar_number" placeholder="Enter Aadhaar Number" required>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="emailId">Email ID</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter Email ID" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="phonenumber">Phone Number</label>
+                            <input type="number" class="form-control" id="phone_number" maxlength="10" placeholder="Enter Phone Number" required>
+                        </div>
+
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="altphonenumber">Alternate Phone Number</label>
+                            <input type="number" class="form-control" id="alternative_phone_number" maxlength="10" placeholder="Enter Phone Number">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container">
+                <br>
+                <div class="row">
+                    <h5>Permanent Address:</h5>
+
+                </div>
+            </div>
+            <hr class="divider">
+
+            <!-- <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Address</label>
+                            <input type="text" class="form-control" id="p_landmark" rows="3">
+                        </div>
+                    </div>
+
+                </div>
+            </div> -->
+
+
+            <!-- Home -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="p_house_number">House Number</label>
+                            <input type="text" class="form-control" id="p_house_number" placeholder="Enter House Number" required>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="p_colony_name">Colony Name</label>
+                            <input type="text" class="form-control" id="p_colony_name" placeholder="Colony name" required>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="p_city">City</label>
+                            <input type="text" class="form-control" id="p_city" placeholder="Enter City" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="p_country">Country</label>
+                            <input type="text" class="form-control" id="p_country" placeholder="Enter Country" required>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="p_state">State</label>
+                            <input type="text" class="form-control" id="p_state" placeholder="Enter State" required>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for=" p_pincode">Pincode</label>
+                            <input type="number" class="form-control" id=" p_pincode" placeholder="Enter Pincode" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Current Address -->
+            <input style="margin-left: 20px" type="checkbox" id="same" name="same" onchange="addressFunction()" />
+            <label for="same"> Tick the checkbox if Current Address is Permanent Address.</label>
+
+            <div class="container">
+                <br>
+                <div class="row">
+                    <h5>Current Address:</h5>
+
+                </div>
+            </div>
+            <hr class="divider">
+
+            <div class="container">
+                <!-- <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Address</label>
+                            <input type="text" class="form-control" id="l_landmark">
+                        </div>
+                    </div>
+
+                </div> -->
+            </div>
+            <!-- city -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="l_house_number">House Number</label>
+                            <input type="text" class="form-control" id="l_house_number" placeholder="Enter House Number" required>
+                        </div>
+
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="l_colony_name">Colony Name</label>
+                            <input type="text" class="form-control" id=" l_colony_name" placeholder="Enter Colony name" required>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="l_city">City</label>
+                            <input type="text" class="form-control" id="l_city" placeholder="Enter City" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="l_country">Country</label>
+                            <input type="text" class="form-control" id="l_country" placeholder="Enter Country" required>
+
+                        </div>
+
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="l_state">State</label>
+                            <input type="text" class="form-control" id="l_state" placeholder="Enter State" required>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="l_pincode">Pincode</label>
+                            <input type="number" class="form-control" id="l_pincode" placeholder="Enter Pincode" required>
+                        </div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <b><h5 >High School Details:</h5></b>
+            <hr class="divider">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="high_institute">Institute Name</label>
+                            <input type="text" class="form-control" id="high_institute" name="high_institute" placeholder="Institute  Name" required>
+                        </div>
+
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="high_board">Institute Board</label>
+                            <input type="text" class="form-control" id="high_board" name="high_board" placeholder="Institute Board" required>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="high_passing_year">Passing Year</label>
+                            <select class="form-control" id="high_passing_year">
+                                    <option>2010</option>
+                                    <option>2011</option>
+                                    <option>2012</option>
+                                    <option>2013</option>
+                                    <option>2014</option>
+                                    <option>2015</option>
+                                    <option>2016</option>
+                                    <option>2017</option>
+                                    <option>2018</option>
+                                    <option>2019</option>
+                                    <option>2020</option>
+                                </select>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="high_marks_obtain">Marks Obtained</label>
+                            <input type="number" class="form-control" id="high_marks_obtain" name="high_marks_obtain" placeholder="Marks Obtained" required>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="high_total_marks">Total Marks</label>
+                            <input type="number" class="form-control" id="high_total_marks" name="high_total_marks" placeholder="Total Marks" required>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <br>
+            <!-- 12th Details -->
+            <b><h5>Higher Secondary Details:</h5></b>
+            <hr class="divider">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="higher_secondary_institude">Institute Name</label>
+                            <input type="text" class="form-control" id="higher_secondary_institude" name="higher_secondary_institude" placeholder="Institute  Name" required>
+                        </div>
+
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="higher_secondary_board">Institute Board</label>
+                            <input type="text" class="form-control" id="higher_secondary_board" name="higher_secondary_board" placeholder="Institute Board" required>
+                        </div>
+
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="higher_secondary_passing_year">Passing Year</label>
+                            <select class="form-control" id="higher_secondary_passing_year" required>
+                <option>2010</option>
+                <option>2011</option>
+                <option>2012</option>
+                <option>2013</option>
+                <option>2014</option>
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+                <option>2018</option>
+                <option>2019</option>
+                <option>2020</option>
+            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="higher_secondary_markso_obtain">Marks Obtained</label>
+                            <input type="number" class="form-control" id="higher_secondary_markso_obtain" name="higher_secondary_markso_obtain" placeholder="Marks Obtained" required>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="higher_secondary_total_marks">Total Marks</label>
+                            <input type="number" class="form-control" id="higher_secondary_total_marks" name="higher_secondary_total_marks" placeholder="Total Marks" required>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <br>
+
+            <div class="container">
+                <div class="row">
+                    <h5>Father's Details:</h5>
+                    <hr class="divider">
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="firstname">First Name</label>
+                            <input type="text" class="form-control" id="f_first_name" placeholder="Enter First Name" required>
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" class="form-control" id="f_last_name" placeholder="Enter Last Name" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="mobilenumber">Contact Number</label>
+                            <input type="number" class="form-control" id="f_mobile_number" maxlength="10" placeholder="Enter Conatct Number" required>
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="occupation">Occupation</label>
+                            <input type="text" class="form-control" id="f_job" placeholder="Enter Occupation" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="container">
+                <div class="row">
+                    <h5>Mother's Details:</h5>
+
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="firstname">First Name</label>
+                            <input type="text" class="form-control" id="m_first_name" placeholder="Enter First Name" required>
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" class="form-control" id="m_last_name" placeholder="Enter Last Name" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="mobilenumber">Contact Number</label>
+                            <input type="number" class="form-control" id="m_mobile_number" placeholder="Enter Contact Number" required>
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="occupation">Occupation</label>
+                            <input type="text" class="form-control" id="m_job" placeholder="Enter Occupation" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="container">
+                <div class="row">
+                    <h5>Course Details:</h5>
+
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="admission_year">Admission Year</label>
+                            <input type="number" class="form-control" id="admission_year" minlength="4" placeholder="Enter Admission Year" required>
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="coursename">Course Name</label>
+                            <input type="text" class="form-control" id="course_name" placeholder="Enter Course Name" required>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="department">Department Name</label>
+                            <input type="text" class="form-control" id="department" placeholder="Enter Department" required>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <br>
+            <h5>Student Documents:</h5>
+            <hr class="divider">
+
+            <!-- Files -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="higher_secondary_marksheet_image">Secondary School Marksheet</label>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="higher_secondary_marksheet_image" required>
+                                <label class="custom-file-label" for="customFile">Choose file</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="high_marksheet_image">High School Marksheet</label>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="high_marksheet_image" required>
+                                <label class="custom-file-label" for="customFile">Choose file</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="student_image">Student Image</label>
+
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="student_image" required>
+                                <label class="custom-file-label" for="customFile">Choose file</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="student_signature">Signatue</label>
+
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="student_signature" required>
+                                <label class="custom-file-label" for="customFile">Choose file</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="student_image">Aadhaar </label>
+
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="student_aadhaar" required>
+                                <label class="custom-file-label" for="customFile">Choose file</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="text-right">
+                <button class="btn btn-primary btn-lg disabled studentform submitbutton" role="button" aria-disabled="true">Submit</button>
+            </div>
+
+        </form>
+        <br>
+
+    </div>
+
+</div>

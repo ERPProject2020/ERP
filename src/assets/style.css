@@ -373,7 +373,7 @@ a {
 
 .sidebar .nav-item.dropdown .dropdown-toggle::after,
 .topbar .nav-item.dropdown .dropdown-toggle::after {
-    width: 1rem;
+    width: 20px;
     text-align: center;
     float: right;
     vertical-align: 0;

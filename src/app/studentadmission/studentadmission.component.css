@@ -12,6 +12,7 @@ h2 {
 
 .studentform {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 input,
@@ -50,8 +51,8 @@ input[type=number] {
 
 .divider {
     border-top: 2px solid gray;
-    width: 86%;
-    margin-left: 91px;
+    width:90%;
+    margin-left:36px;
 }
 
 

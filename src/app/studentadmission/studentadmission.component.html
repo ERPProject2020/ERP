@@ -541,7 +541,7 @@
                 <!-- End of Topbar -->
                 <div class="studentadmition" style="background-color:white; width: 100%;">
                     <div class="studentform">
-                        <div class="" style="background-color: rgb(226, 225, 225)">
+                        <div class="" style="background-color: white">
                             <br>
                             <div class="row">
                                 <h2 style="margin: auto; margin-bottom: 20px;">Student Admission</h2>
@@ -567,7 +567,8 @@
                                         <div class="form-group">
                                             <label for="firstname">First Name <span style="color:red">*</span></label>
 
-                                            <input type="text" class="form-control" id="first_name" placeholder="Enter First Name" required>
+                                            <input type="text" class="form-control" id="first_name" oninvalid="this.setCustomValidity('Please Enter valid Name')"
+ oninput="setCustomValidity('')"placeholder="Enter First Name" required="">
                                         </div>
                                     </div>
                                     <div class="col-sm">
@@ -589,7 +590,7 @@
                                     <div class="col-sm">
                                         <div class="form-group">
                                             <label for="dateofbirth">Date of Birth  <i class="fa fa-calendar"></i> <span style="color:red">*</span></label>
-                                            <input type="text" class="form-control" id="date_of_birth" placeholder="DD/MM/YYYY" onfocus="(this.type='date')">
+                                            <input type="text" class="form-control" id="date_of_birth" placeholder="Date Of Birth" onfocus="(this.type='date')">
                                             <!-- <input type="date" placeholder="MM/DD/YY" required> -->
 
                                         </div>
@@ -1036,14 +1037,14 @@
                                     <div class="col-sm">
                                         <div class="form-group">
                                             <label for="high_institute">School Name <span style="color:red">*</span></label>
-                                            <input type="text" class="form-control" id="high_institute" name="high_institute" placeholder="Institute  Name" required>
+                                            <input type="text" class="form-control" id="high_institute" name="high_institute" placeholder="School  Name" required>
                                         </div>
 
                                     </div>
                                     <div class="col-sm">
                                         <div class="form-group">
                                             <label for="high_board">Board Name<span style="color:red">*</span></label>
-                                            <input type="text" class="form-control" id="high_board" name="high_board" placeholder="Institute Board" required>
+                                            <input type="text" class="form-control" id="high_board" name="high_board" placeholder="Board Name" required>
                                         </div>
 
                                     </div>
@@ -1104,14 +1105,14 @@
                                     <div class="col-sm">
                                         <div class="form-group">
                                             <label for="higher_secondary_institude">School Name<span style="color:red">*</span></label>
-                                            <input type="text" class="form-control" id="higher_secondary_institude" name="higher_secondary_institude" placeholder="Institute  Name" required>
+                                            <input type="text" class="form-control" id="higher_secondary_institude" name="higher_secondary_institude" placeholder="School  Name" required>
                                         </div>
 
                                     </div>
                                     <div class="col-sm">
                                         <div class="form-group">
                                             <label for="higher_secondary_board">Board Name<span style="color:red">*</span></label>
-                                            <input type="text" class="form-control" id="higher_secondary_board" name="higher_secondary_board" placeholder="Institute Board" required>
+                                            <input type="text" class="form-control" id="higher_secondary_board" name="higher_secondary_board" placeholder="Board Name" required>
                                         </div>
 
                                     </div>
@@ -1189,7 +1190,7 @@
                                                 <option>B.TEch</option>
                                                 <option >Bpharmacy</option>
                                                 <option>MCA</option>
-                                                
+
                                             </select>
                                         </div>
                                     </div>
@@ -1203,7 +1204,7 @@
                                                 <option>ME</option>
                                                 <option >CIVIL</option>
                                                 <option>IT</option>
-                                                
+
                                             </select>
                                         </div>
                                     </div>
